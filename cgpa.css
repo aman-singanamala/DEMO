@@ -1,0 +1,145 @@
+/* Back Ground Styling --------------------------------*/
+
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+
+/* Exo thin font from Google. */
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+
+/* Animations */
+
+@-webkit-keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@-moz-keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@-o-keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@keyframes bg-scrolling-reverse {
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@-webkit-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+
+@-moz-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+
+@-o-keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+
+@keyframes bg-scrolling {
+    0% {
+        background-position: 50px 50px;
+    }
+}
+
+/* Main styles */
+
+body {
+    margin-top: 8rem;
+    color: aqua;
+    /* font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif; */
+    text-align: center;
+    /* img size is 50x50 */
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 0.92s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 0.92s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+body::before {
+    font-size: 8rem;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    /* background: linear-gradient(to bottom right, #33ccff 0%, #99ffcc 68%);*/
+    color: red;
+    background-color: #d9d9d9;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    
+}
+
+.wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 1px 1px black;
+}
+
+input {
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+select {
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+table {
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.display-none {
+    display: none;
+}
+
+tbody td {
+    text-transform: uppercase;
+}
+
+#dispdatetime {
+    font-size: 25px;
+    position: absolute;
+    float: right;
+    right: 30px;
+    font-family: 'Indie Flower', cursive;
+    color:black;
+    text-shadow: 1px 1px black;   
+}
